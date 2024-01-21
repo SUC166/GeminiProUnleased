@@ -7,7 +7,6 @@ from PIL import Image
 import os 
 import io 
 
-load_dotenv()
 
 def image_to_byte_array(image: Image) -> bytes:
     imgByteArr = io.BytesIO()
