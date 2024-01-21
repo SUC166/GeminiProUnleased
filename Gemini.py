@@ -3,7 +3,6 @@
 import streamlit as st 
 import google.generativeai as genai 
 import google.ai.generativelanguage as glm 
-from dotenv import load_dotenv
 from PIL import Image
 import os 
 import io 
@@ -16,7 +15,7 @@ def image_to_byte_array(image: Image) -> bytes:
     imgByteArr=imgByteArr.getvalue()
     return imgByteArr
 
-API_KEY = os.environ.get("GOOGLE_API_KEY")
+API_KEY = "AIzaSyCsTBKmCMNY7Evl7aU_8QwbGFG7ltmUXnM"
 genai.configure(api_key=API_KEY)
 
 st.image("./Google-Gemini-AI-Logo.png", width=200)
